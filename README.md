@@ -1,7 +1,7 @@
 # json-schema-validator
 
 
-## Regarding json_schema.json, please provide appropriate file path
+## Provide appropriate file path of JSON Schema
 
 json_schema = 'json_schema.json'
 
