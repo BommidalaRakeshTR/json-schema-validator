@@ -13,7 +13,6 @@ validation_path = 'C:/Users/C286515/Json_Files/'
 ## Call python file named jsonschema_validator.py
 python jsonschema_validator.py
 
-######################################################## json-schema-validator code ###################################################################
 
 # list of Dependancy packages
 from validation import field_validation
