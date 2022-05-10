@@ -1,0 +1,219 @@
+{
+  "type": "object",
+  "required": [],
+  "properties": {
+    "acquiredDate": {
+      "type": "int64"
+    },
+    "jurisdictionalAuthority": {
+      "type": "object"
+    },
+    "docketNumber": {
+      "type": "object"
+    },
+    "title": {
+      "type": "object"
+    },
+    "filedDate": {
+      "type": "int64"
+    },
+    "caseType": {
+      "type": "object"
+    },
+    "cause": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string"
+    },
+    "natureOfSuit": {
+      "type": "int64"
+    },
+    "juryDemand": {
+      "type": "object"
+    },
+    "relatedCases": {
+      "type": "string"
+    },
+    "judges": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "patents": {
+      "type": "string"
+    },
+    "plaintiffs": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "party": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "partyType": {
+              "type": "string"
+            },
+            "fullName": {
+              "type": "string"
+            },
+            "aliases": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "alias": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "attorneys": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "attorney": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [],
+                    "properties": {
+                      "fullName": {
+                        "type": "string"
+                      },
+                      "firm": {
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "contact": {
+                            "type": "object",
+                            "required": [],
+                            "properties": {
+                              "address": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "street": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "city": {
+                                    "type": "string"
+                                  },
+                                  "state": {
+                                    "type": "string"
+                                  },
+                                  "zip": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "phoneNumbers": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "phoneNumber": {
+                                    "type": "object",
+                                    "required": [],
+                                    "properties": {
+                                      "type": {
+                                        "type": "string"
+                                      },
+                                      "value": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "contact": {
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "phoneNumbers": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "status": {
+                        "type": "string"
+                      },
+                      "designation": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "defendants": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "partyType": {
+                "type": "string"
+              },
+              "fullName": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "otherParties": {
+      "type": "string"
+    },
+    "docketEntries": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "docketEntry": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "filedDate": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
