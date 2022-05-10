@@ -10,5 +10,5 @@ json_schema = 'json_schema.json'
 validation_path = 'C:/Users/C286515/Json_Files/'
 
 
-## Call python file named jsonschema_validator.py
+## Call python file named jsonschema_validator.py to validate JSON files across JSON Schema
 python jsonschema_validator.py
